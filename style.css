@@ -184,6 +184,7 @@ h1.title-sec{
 }
 .i-f {
   padding: 20px 0;
+  /* text-align: center; */
 }
 .w-app img{
   width: 30px;
@@ -195,6 +196,7 @@ h1.title-sec{
   border: 1px solid rgb(158, 158, 158);
   border-radius: 10px;
   margin-bottom: 10px;
+  /* margin-left: 25%%; */
 }
 p.get{
   margin-left: -10px;
@@ -217,6 +219,18 @@ p.get{
   font-size: 18px;
 }
 
+/* reordering sec-2*/
+/* .clas{
+  float: right;
+}
+.clas-2{
+  float:left;
+}
+.clas-3{
+  float: right;
+} */
+
+
 /* APPEARANCE IN DESKTOP */
 @media (min-width: 992px) {
   /* programs */
@@ -235,5 +249,45 @@ p.get{
   .dif-card{
     top: -25px;
   }
+
+  /* footer */
+  /* .w-f {
+    background-color: #091426;
+    color: white;
+  }
+  .i-f {
+    padding: 20px 0;
+  }
+  .w-app img{
+    width: 30px;
+    height: 30px;
+    margin-right: 110px;
+  }
+  .w-app{
+    width: 175px;
+    border: 1px solid rgb(158, 158, 158);
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  p.get{
+    margin-left: -10px;
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .w-dwn{
+    margin-left: -130px;
+    /* border: 1px solid saddlebrown; */
+  }
+  .download{
+    /* border: 1px solid saddlebrown; */
+    margin-top: 15px;
+    margin-bottom: -5px;
+    font-size: 12px;
+  }
+  .brand{
+    /* border: 1px solid saddlebrown; */
+    font-weight: bold;
+    font-size: 18px;
+  } */
 
 }

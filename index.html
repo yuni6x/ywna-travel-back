@@ -7,7 +7,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
@@ -58,7 +57,7 @@
     <div class="carousel-caption">
       <h1 class="mb-3">Make your Dream Come True Around the world with us</h1>
       <p>Experience the very best Experience. Make your next visit extra sweet with exciting hotel deals and offers, from luxurious stay packages to gourmet getaways and rejuvenating retreats.</p>
-      <button class="btn">Discover more <i class="fa-solid fa-angle-right"></i></button>
+      <button class="btn" id="toastDisc">Discover more <i class="fa-solid fa-angle-right"></i></button>
     </div>
   </div>
   <div class="carousel-item text-center">
@@ -95,12 +94,19 @@
     <div class="container-fluid">
       <div class="row justify-content-center sec-2 mt-5 mb-5">
         <div class="col-sm-5 text-center align-self-center">
-          <img src="img/bali-culture.png" class="rounded" alt="bali-culture">
+          <div class="clas">
+            <img src="img/bali-culture.png" class="rounded" alt="bali-culture">
+          </div> 
         </div>
         <div class="col-sm-5 align-self-center">
-          <h1>Learn new culture</h1>
-          <p>we provide holidays while introducing new cultures to you. we have many programs to get to know the local culture, you can choose the cultural events available in our program. Get to know and learn about the unique culture of each country.</p>
-          <button class="btn mb-2">Explore more <i class="fa-solid fa-angle-right"></i></button>
+          <div class="clas-2">
+            <h1>Learn new culture</h1>
+            <p>we provide holidays while introducing new cultures to you. we have many programs to get to know the local culture, you can choose the cultural events available in our program. Get to know and learn about the unique culture of each country.</p>
+          </div>
+          <div class="clas-3">
+            <button class="btn mb-2" id="toastDisc">Explore more <i class="fa-solid fa-angle-right"></i></button>
+          </div>
+          
         </div>
       </div>
     </div>
@@ -139,7 +145,7 @@
           <div class="col service"><p>limited space acces</p></div>
         </div>
         <div class="d-grid mt-2 p-2">
-          <button class="btn rounded-pill" type="button">Chose program</button>
+          <button class="btn rounded-pill" id="toastDisc" type="button">Chose program</button>
         </div>
       </div>
 
@@ -167,8 +173,8 @@
           <div class="col-sm-1 icon"><i class="fa-solid fa-check"></i></div>
           <div class="col service"><p>event support</p></div>
         </div>
-        <div class="d-grid mt-2 p-2">
-          <button class="btn rounded-pill" type="button">Chose program</button>
+        <div class="d-grid mt-2 p-2"> 
+          <button class="btn rounded-pill" id="toastDisc" type="button">Chose program</button>
         </div>
       </div>
 
@@ -198,7 +204,7 @@
           <div class="col service"><p>limited experience</p></div>
         </div>
         <div class="d-grid mt-2 p-2">
-          <button class="btn rounded-pill" type="button">Chose program</button>
+          <button class="btn rounded-pill" id="toastDisc" type="button">Chose program</button>
         </div>
       </div>
 
@@ -227,7 +233,7 @@
           <div class="col service"><p>event support</p></div>
         </div>
         <div class="d-grid mt-2 p-2">
-          <button class="btn rounded-pill" type="button">Chose program</button>
+          <button class="btn rounded-pill" id="toastDisc" type="button">Chose program</button>
         </div>
       </div>
     </div>
@@ -273,7 +279,7 @@
       <h1 class="title-sec">Frequently Asked Questions</h1>
     </div>
   </div>
-  <div class="f-ask row justify-content-center mt-5 mb-5">
+  <div class="f-ask row justify-content-center mb-5">
     <div class="col-sm-5 align-self-center">
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
@@ -307,24 +313,42 @@
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
               Minimal budget that i need?
             </button>
           </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">The most important difference between family travel insurance and group travel insurance is the persons covered. As per its name, a family travel insurance plan only covers, well, family members. In most cases, only immediate family – legal spouse, and own children – are included.</div>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-sm-5 align-self-center">
+    <div class="col-sm-5 align-self-center m-2">
       <img src="img/group.png" class="rounded" alt="">
     </div>
   </div>
 </div>
-
 <!-- end Frequently Asked Questions -->
+
+
+<!-- discount -->
+<!-- <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div> -->
+<!-- end -->
 
 
 <!-- footer -->
