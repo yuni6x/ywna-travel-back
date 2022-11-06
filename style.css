@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Manrope:wght@300;400;500&family=Poppins:wght@100;200;300;400&family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #3E3E3E;
+}
+
+.navbar-brand{
+  font-weight: bold;
+  font-size: 22px;
+}
+.navbar-nav{
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* image carousel in mobile */
+.carousel::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+  top: 0;
+}
+.w-100 {
+  width: 100%;
+  height: 584px;
+  object-fit: cover;
+}
+.carousel-caption{
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+  color: #FFFFFF !important;
+  z-index: 1;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+.carousel-caption p{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* button */
+.btn {
+  background: linear-gradient(to right, rgb(117, 235, 235), rgb(89, 232, 166));
+  color: white;
+}
+.btn:hover{
+  font-weight: bold;
+}
+
+
+/* section 2 */
+.sec-2{
+  padding: 20px;
+}
+.sec-2 img{
+  width: 100%;
+}
+.sec-2 h1 {
+  font-weight: 38px;
+  font-weight: bold;
+}
+.sec-2 p {
+  font-weight: 15px;
+  font-weight: 500;
+  color: #6C6C6C;
+}
+
+/* programs */
+.programs{
+  margin: 0 25px;
+}
+.programs-w{
+  padding: 30px 15px;
+  /* border: 1px solid red; */
+  margin: 10px 0;
+}
+.programs h1 {
+  font-weight: 700;
+  font-size: 36px;
+  font-family: 'Roboto', sans-serif;
+}
+.programs h2{
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+}
+
+.programs p{
+  font-size: 15px;
+  font-weight: 400;
+  color : rgba(132, 129, 153, 1);
+  
+}
+/* icon */
+.icon {
+  color: rgb(115, 110, 110);
+  background: rgba(157, 210, 185, 0.1);
+  display: flex;
+  width: 23px;
+  height: 23px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+.icon-w{
+  margin-bottom: -10px;
+}
+
+/* card testimonial */
+.card img {
+  width: 50%;
+  margin: -5px auto;
+}
+.card{
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.13);
+}
+.card h6{
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.card p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(108, 108, 108, 1);
+
+}
+.card > p.testimonial{
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(108, 108, 108, 1);
+}
+
+/* diffrent card */
+.dif-card{
+  position: relative;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 3px solid #75ebeb;
+  border-radius: 16px;
+}
+.exclusive {
+  position: absolute;
+  right: 10px;
+  top: -20px;
+  color: red;
+}
+
+/* title each section */
+h1.title-sec{
+  font-size: 38px;
+  font-weight: 600;
+  color: black;
+}
+
+
+/* frequently asked questions */
+.f-ask{
+  padding: 20px;
+}
+.f-ask img{
+  width: 100%;
+}
+.accordion{
+  border: 1px solid #75ebeb;
+}
+.accordion-item {
+  border: 1px solid #75ebeb;
+}
+
+
+/* footer */
+.w-f {
+  background-color: #091426;
+  color: white;
+}
+.i-f {
+  padding: 20px 0;
+}
+.w-app img{
+  width: 30px;
+  height: 30px;
+  margin-right: 110px;
+}
+.w-app{
+  width: 175px;
+  border: 1px solid rgb(158, 158, 158);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+p.get{
+  margin-left: -10px;
+  font-size: 22px;
+  font-weight: 400;
+}
+.w-dwn{
+  margin-left: -130px;
+  /* border: 1px solid saddlebrown; */
+}
+.download{
+  /* border: 1px solid saddlebrown; */
+  margin-top: 15px;
+  margin-bottom: -5px;
+  font-size: 12px;
+}
+.brand{
+  /* border: 1px solid saddlebrown; */
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* APPEARANCE IN DESKTOP */
+@media (min-width: 992px) {
+  /* programs */
+  .programs{
+    margin: 50px 100px;
+    padding: 0 10px;
+  }
+  /* testimonial */
+  .card{
+    margin: 0 10px;
+    padding: 20px;
+    box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.13);
+  }
+
+  /* dif card */
+  .dif-card{
+    top: -25px;
+  }
+
+}
